@@ -157,7 +157,7 @@ angular.module('mVistaPaciente', ['ngRoute'])
                         left: 100
                     },
                     series: [
-                        {y: 'value', color: 'steelblue', thickness: '2px', type: 'linear', striped: true, label: 'Pouet'},
+                        {y: 'value', color: 'steelblue', thickness: '2px', type: 'linear', striped: true, label: 'Variacion del nivel de dolor'},
                     ],
                     lineMode: 'linear',
                     tension: 0.7,
