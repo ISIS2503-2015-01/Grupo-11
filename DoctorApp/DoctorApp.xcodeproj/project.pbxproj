@@ -24,6 +24,15 @@
 		9F0F21781AC3ABE600F90CFD /* NetUploadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0F21691AC3ABE600F90CFD /* NetUploadTask.swift */; };
 		9F0F21791AC3ABE600F90CFD /* NetUploadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0F21691AC3ABE600F90CFD /* NetUploadTask.swift */; };
 		9F6F62EB1AD4A6EF009141B4 /* PacientesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F62EA1AD4A6EF009141B4 /* PacientesTableViewController.swift */; };
+		9F7E420B1B0E8F6C00B250AD /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E42081B0E8F6C00B250AD /* Chart.swift */; };
+		9F7E420C1B0E8F6C00B250AD /* ChartColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E42091B0E8F6C00B250AD /* ChartColors.swift */; };
+		9F7E420D1B0E8F6C00B250AD /* ChartSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E420A1B0E8F6C00B250AD /* ChartSeries.swift */; };
+		9F7E420F1B0E9AA900B250AD /* EpisodioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E420E1B0E9AA900B250AD /* EpisodioTableViewController.swift */; };
+		9F7E42111B0EA0D800B250AD /* PacienteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7E42101B0EA0D800B250AD /* PacienteTableViewController.swift */; };
+		9F7E42131B0EEED000B250AD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7E42121B0EEED000B250AD /* AVFoundation.framework */; };
+		9FCAC1311AFB2232003C0756 /* PacienteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCAC1301AFB2232003C0756 /* PacienteViewController.swift */; };
+		9FCAC1331AFB26F6003C0756 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCAC1321AFB26F6003C0756 /* LineChart.swift */; };
+		9FCAC1341AFB2756003C0756 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCAC1321AFB26F6003C0756 /* LineChart.swift */; };
 		9FDD4F931AB7435600D79444 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDD4F921AB7435600D79444 /* AppDelegate.swift */; };
 		9FDD4F951AB7435600D79444 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDD4F941AB7435600D79444 /* ViewController.swift */; };
 		9FDD4F981AB7435700D79444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDD4F961AB7435700D79444 /* Main.storyboard */; };
@@ -56,7 +65,16 @@
 		9F0F21671AC3ABE600F90CFD /* NetRequestSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetRequestSerialization.swift; sourceTree = "<group>"; };
 		9F0F21681AC3ABE600F90CFD /* NetResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetResponseData.swift; sourceTree = "<group>"; };
 		9F0F21691AC3ABE600F90CFD /* NetUploadTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetUploadTask.swift; sourceTree = "<group>"; };
+		9F3956121B01B47600B442C8 /* DoctorApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DoctorApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		9F6F62EA1AD4A6EF009141B4 /* PacientesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacientesTableViewController.swift; sourceTree = "<group>"; };
+		9F7E42081B0E8F6C00B250AD /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		9F7E42091B0E8F6C00B250AD /* ChartColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartColors.swift; sourceTree = "<group>"; };
+		9F7E420A1B0E8F6C00B250AD /* ChartSeries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSeries.swift; sourceTree = "<group>"; };
+		9F7E420E1B0E9AA900B250AD /* EpisodioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodioTableViewController.swift; sourceTree = "<group>"; };
+		9F7E42101B0EA0D800B250AD /* PacienteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacienteTableViewController.swift; sourceTree = "<group>"; };
+		9F7E42121B0EEED000B250AD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9FCAC1301AFB2232003C0756 /* PacienteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacienteViewController.swift; sourceTree = "<group>"; };
+		9FCAC1321AFB26F6003C0756 /* LineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineChart.swift; path = DoctorAppTests/LineChart.swift; sourceTree = SOURCE_ROOT; };
 		9FDD4F8D1AB7435600D79444 /* DoctorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FDD4F911AB7435600D79444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FDD4F921AB7435600D79444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7E42131B0EEED000B250AD /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +128,7 @@
 		9FDD4F841AB7435500D79444 = {
 			isa = PBXGroup;
 			children = (
+				9F7E42121B0EEED000B250AD /* AVFoundation.framework */,
 				9FDD4F8F1AB7435600D79444 /* DoctorApp */,
 				9FDD4FA51AB7435700D79444 /* DoctorAppTests */,
 				9FDD4F8E1AB7435600D79444 /* Products */,
@@ -142,6 +162,10 @@
 		9FDD4F901AB7435600D79444 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9F7E42081B0E8F6C00B250AD /* Chart.swift */,
+				9F7E42091B0E8F6C00B250AD /* ChartColors.swift */,
+				9F7E420A1B0E8F6C00B250AD /* ChartSeries.swift */,
+				9FCAC1321AFB26F6003C0756 /* LineChart.swift */,
 				9FDD4F911AB7435600D79444 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -169,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				9FDD4FB41AB748B000D79444 /* Connector.swift */,
+				9F3956121B01B47600B442C8 /* DoctorApp-Bridging-Header.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -179,6 +204,9 @@
 				9FDD4F941AB7435600D79444 /* ViewController.swift */,
 				9FDD4FBA1AB7586600D79444 /* TableViewController.swift */,
 				9F6F62EA1AD4A6EF009141B4 /* PacientesTableViewController.swift */,
+				9FCAC1301AFB2232003C0756 /* PacienteViewController.swift */,
+				9F7E420E1B0E9AA900B250AD /* EpisodioTableViewController.swift */,
+				9F7E42101B0EA0D800B250AD /* PacienteTableViewController.swift */,
 			);
 			name = DoctorViews;
 			sourceTree = "<group>";
@@ -294,18 +322,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FCAC1341AFB2756003C0756 /* LineChart.swift in Sources */,
 				9F0F21761AC3ABE600F90CFD /* NetResponseData.swift in Sources */,
 				9F0F21701AC3ABE600F90CFD /* NetDownloadTask.swift in Sources */,
 				9F0F216A1AC3ABE600F90CFD /* GCD.swift in Sources */,
+				9F7E42111B0EA0D800B250AD /* PacienteTableViewController.swift in Sources */,
+				9FCAC1311AFB2232003C0756 /* PacienteViewController.swift in Sources */,
 				9F0F216E1AC3ABE600F90CFD /* NetData.swift in Sources */,
 				9FDD4FB51AB748B000D79444 /* Connector.swift in Sources */,
 				9FDD4F951AB7435600D79444 /* ViewController.swift in Sources */,
+				9F7E420C1B0E8F6C00B250AD /* ChartColors.swift in Sources */,
 				9FDD4F931AB7435600D79444 /* AppDelegate.swift in Sources */,
 				9F0F21781AC3ABE600F90CFD /* NetUploadTask.swift in Sources */,
 				9FDD4FBB1AB7586600D79444 /* TableViewController.swift in Sources */,
 				9F0F21721AC3ABE600F90CFD /* NetHelper.swift in Sources */,
+				9F7E420F1B0E9AA900B250AD /* EpisodioTableViewController.swift in Sources */,
 				9FDD4FC01AB7CF3B00D79444 /* MenuTableViewCell.swift in Sources */,
+				9F7E420B1B0E8F6C00B250AD /* Chart.swift in Sources */,
 				9F0F21741AC3ABE600F90CFD /* NetRequestSerialization.swift in Sources */,
+				9F7E420D1B0E8F6C00B250AD /* ChartSeries.swift in Sources */,
 				9F6F62EB1AD4A6EF009141B4 /* PacientesTableViewController.swift in Sources */,
 				9F0F216C1AC3ABE600F90CFD /* Net.swift in Sources */,
 			);
@@ -319,6 +354,7 @@
 				9F0F216B1AC3ABE600F90CFD /* GCD.swift in Sources */,
 				9FDD4FBC1AB773B100D79444 /* Connector.swift in Sources */,
 				9F0F216F1AC3ABE600F90CFD /* NetData.swift in Sources */,
+				9FCAC1331AFB26F6003C0756 /* LineChart.swift in Sources */,
 				9FDD4FA91AB7435700D79444 /* DoctorAppTests.swift in Sources */,
 				9F0F21791AC3ABE600F90CFD /* NetUploadTask.swift in Sources */,
 				9F0F21731AC3ABE600F90CFD /* NetHelper.swift in Sources */,
@@ -392,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -428,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -441,11 +477,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
+				);
 				INFOPLIST_FILE = DoctorApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DoctorApp/DoctorApp-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -455,11 +497,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
+				);
 				INFOPLIST_FILE = DoctorApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DoctorApp/DoctorApp-Bridging-Header.h";
 			};
 			name = Release;
 		};

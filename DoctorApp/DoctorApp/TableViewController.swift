@@ -58,7 +58,7 @@ class TableViewController: UITableViewController {
         if(section == 0){
             return 1
         }else if(section == 1){
-            return 2
+            return 1
         }else{
             return doctorArray.count
         }
@@ -71,7 +71,7 @@ class TableViewController: UITableViewController {
             
             //            cell.imageView?.image = UIImage(named: "doctor")
             let conector : Connector = Connector()
-            var dict = conector.doGet("/paciente")[0] as! NSDictionary
+//            var dict = conector.doGet("/paciente")[0] as! NSDictionary
             
             //            cell.imageView?.image = conector.getImage(dict.valueForKey("picture") as NSString)
             cell.lblDoctor?.text = "Doctor Perez"
@@ -85,6 +85,9 @@ class TableViewController: UITableViewController {
                 cell.imageView?.image = UIImage(named: "pacientes")
             }else if(indexPath.row == 1){
                 cell.textLabel?.text = "Ver Episodios"
+                cell.imageView?.image = UIImage(named: "episodios")
+            }else if(indexPath.row == 2){
+                cell.textLabel?.text = "Filtrar pacientes/episodios"
                 cell.imageView?.image = UIImage(named: "episodios")
             }
             
@@ -113,6 +116,8 @@ class TableViewController: UITableViewController {
             }else if (indexPath.row == 1){
                 //Ver episodios selected
                 
+            }else if (indexPath.row == 2){
+                //Filtrar pacientes/episodios selected
             }
         }
         

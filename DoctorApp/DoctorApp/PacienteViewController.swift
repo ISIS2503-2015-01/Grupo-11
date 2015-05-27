@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PacienteViewController: UIViewController, LineChartDelegate {
+class PacienteViewController: UIViewController {
     
     @IBOutlet weak var lblNombre : UILabel?
     @IBOutlet weak var lblFecha : UILabel?
@@ -34,26 +34,22 @@ class PacienteViewController: UIViewController, LineChartDelegate {
         
         var episodios : NSArray = paciente.valueForKey("episodios") as! NSArray
         
-        var vals : NSArray = [episodios.count]
+        var data : [Float] = []
+//        var vals : [Float] = [episodios.count]
         for (index, element) in enumerate(episodios) {
-//            vals[(index as Int)] = (element as NSDictionary).valueForKey("")
-            println("Item \(index): \(element)")
+            let dictActual : NSDictionary = element as! NSDictionary
+            data.append(dictActual.valueForKey("nivelDolor") as! Float)
         }
         
-        lineChart = LineChart()
-        lineChart.bounds.origin = CGPointMake(0.0, 0.0)
-        lineChart.addLine([3, 4, 9, 11, 13, 15])
-        lineChart.area = false
-        lineChart.x.grid.count = 5
-        lineChart.y.grid.count = 5
-
-        lineChart.setTranslatesAutoresizingMaskIntoConstraints(false)
-        lineChart.delegate = self
-        self.view.addSubview(lineChart)
-    }
-    
-    func didSelectDataPoint(x: CGFloat, yValues: Array<CGFloat>) {
-        label.text = "x: \(x)     y: \(yValues)"
+        if(episodios.count > 1){
+            let chart = Chart(frame: CGRect(x: 20, y: 200, width: 340, height: 400))
+            let series = ChartSeries(data)
+            series.color = ChartColors.greenColor()
+            chart.addSeries(series)
+            self.view.addSubview(chart)
+        }else{
+            println("No hay episodios")
+        }
     }
 
     override func didReceiveMemoryWarning() {

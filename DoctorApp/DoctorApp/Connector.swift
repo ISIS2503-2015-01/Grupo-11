@@ -12,7 +12,7 @@ import UIKit
 class Connector {
     
     let method : String
-    let requestUrl = "https://neuromed.herokuapp.com/api"
+    let requestUrl = "https://neuroapi.herokuapp.com/api"
     
     init(){
         self.method = ""
@@ -23,6 +23,8 @@ class Connector {
         request.URL = NSURL(string: requestUrl + target)
         request.HTTPMethod = "GET"
         println(NSUserDefaults.standardUserDefaults().valueForKey("TOKEN"))
+        request.addValue("IOS", forHTTPHeaderField: "X-Hash")
+        request.addValue("IOS", forHTTPHeaderField: "X-Device")
         request.addValue(NSUserDefaults.standardUserDefaults().valueForKey("TOKEN") as? String, forHTTPHeaderField: "X-Auth-Token")
         
         var response: NSURLResponse?
@@ -39,18 +41,18 @@ class Connector {
     }
     
     func doPutData(url : String, data: NSData, params : NSDictionary, filename : String) -> Void{
-//        let net = Net()
-//        
-//        let params = ["grabacion": NetData(data: data, mimeType: MimeType.Json, filename: filename)]
-//        //append params to params
-//        
-//        net.PUT(requestUrl + url, params: params, successHandler: { responseData in
-//            //            let result = responseData.json(error: nil)
-//            let response : NSData = responseData.data
-//            NSLog("result: \(response.description)")
-//            }, failureHandler: { error in
-//                NSLog("Error while tryinng to call PUT method on \(self.requestUrl + url) sending NSData")
-//        })
+        //        let net = Net()
+        //
+        //        let params = ["grabacion": NetData(data: data, mimeType: MimeType.Json, filename: filename)]
+        //        //append params to params
+        //
+        //        net.PUT(requestUrl + url, params: params, successHandler: { responseData in
+        //            //            let result = responseData.json(error: nil)
+        //            let response : NSData = responseData.data
+        //            NSLog("result: \(response.description)")
+        //            }, failureHandler: { error in
+        //                NSLog("Error while tryinng to call PUT method on \(self.requestUrl + url) sending NSData")
+        //        })
     }
     
     func doPostFile(url : String, dict : NSDictionary, file : NSData) -> NSArray{
@@ -61,6 +63,9 @@ class Connector {
         var request : NSMutableURLRequest = NSMutableURLRequest()
         request.URL = NSURL(string: requestUrl + url)
         request.HTTPMethod = "POST"
+        
+        request.addValue("IOS", forHTTPHeaderField: "X-Device")
+        request.addValue("IOS", forHTTPHeaderField: "X-Hash")
         request.addValue(NSUserDefaults.standardUserDefaults().valueForKey("TOKEN") as? String, forHTTPHeaderField: "X-Auth-Token")
         
         var err : NSError?
@@ -73,6 +78,9 @@ class Connector {
         var error: AutoreleasingUnsafeMutablePointer<NSError?> = nil
         
         let urlData = NSURLConnection.sendSynchronousRequest(request, returningResponse: &response, error: error)
+        
+        let string1 = NSString(data: urlData!, encoding: NSUTF8StringEncoding)
+        println(string1)
         
         //WARNING! Check if json response is an ARRAY or a DICTIONARY, in that case, cast the method accordingly
         var jsonResult : NSDictionary = ["":""]

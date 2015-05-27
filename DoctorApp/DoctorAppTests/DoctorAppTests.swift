@@ -21,11 +21,6 @@ class DoctorAppTests: XCTestCase {
         super.tearDown()
     }
     
-    func testGet(){
-        let c : Connector = Connector()
-        c.doGet("/doctor")
-    }
-    
     func testExample() {
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")
